@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/bonus/bonus-img/background.png);
+    background: url(img/background.png);
     background-position: center;
     background-size: cover;
 }
@@ -51,6 +51,88 @@ img {
     height: 100%;
 }
 
+@keyframes bounce {
+    5% {
+        transform: rotate(10deg);
+    }
+
+    10% {
+        transform: translateY(5px);
+    }
+
+    15% {
+        transform: translateY(-5px);
+    }
+
+    20% {
+        transform: translateY(5px);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    30% {
+        transform: translateY(5px);
+    }
+
+    35% {
+        transform: translateY(-5px);
+    }
+
+    40% {
+        transform: translateY(5px);
+    }
+
+    45% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    55% {
+        transform: translateY(-5px);
+    }
+
+    60% {
+        transform: translateY(5px);
+    }
+
+    65% {
+        transform: translateY(-5px);
+    }
+
+    70% {
+        transform: translateY(5px);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    85% {
+        transform: translateY(-5px);
+    }
+
+    90% {
+        transform: translateY(5px);
+    }
+
+    95% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
 /* ************************************************** */
 
 /* ! main content */
@@ -77,7 +159,7 @@ img {
     flex-grow: 0.5;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-right: 2px solid black;
 }
@@ -85,19 +167,47 @@ img {
 .picture {
     width: 290px;
     height: 290px;
+    animation: 4.5s bounce infinite;
+    position: relative;
+}
+
+.picture:hover .bubble {
+    opacity: 1;
+}
+
+.bubble {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    opacity: 0;
+    transition: 200ms linear;
+}
+
+.bubble h1 {
+    position: absolute;
+    top: 18px;
+    left: 78px;
 }
 
 .main-col-2 {
     flex-grow: 0.5;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .pixel-art {
     width: 380px;
     padding: 20px;
+    animation: 5s bounce infinite;
+    position: relative;
+}
+
+.pixel-art:hover .bubble {
+    opacity: 1;
 }
 
 .row {
