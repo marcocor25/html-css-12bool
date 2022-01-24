@@ -74,6 +74,14 @@ html {
     align-items: flex-end;
 }
 
+.space-around {
+    justify-content: space-around !important;
+}
+
+.space-between {
+    justify-content: space-between !important;
+}
+
 /* ************************************************** */
 
 /* ! colonne */
@@ -175,3 +183,5 @@ html {
 .col-12-offset {
     margin-left: calc(100% / 12 * 12);
 }
+
+/* ! fine */
