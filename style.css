@@ -46,8 +46,8 @@ html {
 }
 
 .nested {
-    background: #00E164 !important;
     border: 1px solid #006CFA !important;
+    background: #00E164 !important;
 }
 
 /* ************************************************** */
