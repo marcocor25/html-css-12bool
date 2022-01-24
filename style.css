@@ -12,6 +12,21 @@ html {
 
 /* ************************************************** */
 
+/* ! debug */
+
+.debug [class*="col-"] {
+    background: #006CFA;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    white-space: nowrap;
+    color: white;
+}
+
+/* ************************************************** */
+
 /* ! preset contenitori */
 
 .container-fluid {
@@ -19,17 +34,19 @@ html {
     flex-direction: column;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.debug [class*="col-"] {
-    background: #006CFA;
-    padding: 20px 0;
-    border: 1px solid white;
-    color: white;
-    text-align: center;
+.nested {
+    background: #00E164 !important;
+    border: 1px solid #006CFA !important;
 }
 
 /* ************************************************** */
