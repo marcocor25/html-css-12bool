@@ -50,6 +50,30 @@ html {
     background: #00E164 !important;
 }
 
+.center  {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.large {
+    padding: 40px !important;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+.middle {
+    align-items: center;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
 /* ************************************************** */
 
 /* ! colonne */
